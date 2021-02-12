@@ -1,9 +1,55 @@
-body{
-    background: lightblue;
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
 }
 
-.pasta-grossa{
+body{
+    background-image: url('/img/fondo-pag-speciali.jpg') ;
+    text-align: center;
+
+}
+
+header{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    background: white;
+}
+
+nav {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: chartreuse;
+
+    a{
+        text-decoration: none;
+        color:white;
+        margin: 0 1.2rem;
+    }
+}
+
+main{
+    h2{
+        margin: 1.2rem 0;
+    }
+}
+.card-container{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1.2rem 0;
+}
+.card{
+
     img{
         height: 150px;
+        margin: 1.2rem;
     }
 }
