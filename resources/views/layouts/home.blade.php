@@ -7,8 +7,8 @@ Home
     <img src="{{ asset('img/logo.png') }}" alt="">
 </header>
 <nav>
-    <a href="/">HOME</a>
-    <a href="prodotti">PRODOTTI</a>
-    <a href="contatti">CONTATTI</a>
+    <a href="/" class="{{Route::currentRouteName() === 'home' ? 'active' : ''}}">HOME</a>
+    <a href="prodotti" class="{{Route::currentRouteName() === 'prodotti' ? 'active' : ''}}">PRODOTTI</a>
+    <a href="contatti" class="{{Route::currentRouteName() === 'contatti' ? 'active' : ''}}">CONTATTI</a>
 </nav>
 @endsection

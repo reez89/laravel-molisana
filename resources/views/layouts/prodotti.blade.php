@@ -12,6 +12,11 @@ Prodotti
     @if($products['tipo']== 'lunga')
         <div class="card">
             <img src="{{ $products['src'] }}" alt=""> 
+            <div class="overlay">       
+            <img src="{{ asset('/img/icon.svg') }}" alt="">
+                <p>{{ $products['titolo'] }}</p>
+                <p>{{ $products['cottura'] }}</p>
+            </div>
         </div>
     @endif
     @endforeach
@@ -22,6 +27,11 @@ Prodotti
     @if($products['tipo']== 'corta')
         <div class="card">
             <img src="{{ $products['src'] }}" alt=""> 
+            <div class="overlay">       
+                <img src="{{ asset('/img/icon.svg') }}" alt="">
+                <p>{{ $products['titolo'] }}</p>
+                <p>{{ $products['cottura'] }}</p>
+            </div>
         </div>
     @endif
     @endforeach
@@ -32,6 +42,11 @@ Prodotti
     @if($products['tipo']== 'cortissima')
         <div class="card">
             <img src="{{ $products['src'] }}" alt=""> 
+            <div class="overlay">       
+            <img src="{{ asset('/img/icon.svg') }}" alt="">
+                <p>{{ $products['titolo'] }}</p>
+                <p>{{ $products['cottura'] }}</p>
+            </div>
         </div>
     @endif
     @endforeach
